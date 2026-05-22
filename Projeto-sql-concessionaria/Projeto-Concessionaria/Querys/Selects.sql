@@ -1,0 +1,100 @@
+/* Liste todos os carros que estão com status 'Disponível', mostrando:
+marca, modelo, ano e preco */
+
+SELECT MA.NOME,
+	   MO.NOME,
+	   C.ANO,
+	   C.PRECO
+FROM CARRO C
+INNER JOIN MODELO MO
+ON C.ID_MODELO = MO.IDMODELO
+INNER JOIN MARCA MA
+ON MO.ID_MARCA = MA.IDMARCA
+WHERE C.SITUACAO = 'DISPONIVEL'
+GO
+
+/* Mostre o nome de todos os clientes que já realizaram pelo menos uma compra. */
+
+SELECT C.NOME 
+FROM CLIENTE C
+INNER JOIN VENDAS V
+ON V.ID_CLIENTE = C.IDCLIENTE
+GO
+
+/* Liste todos os vendedores que ainda não realizaram nenhuma venda. */
+
+SELECT IDVENDEDOR, V.NOME
+FROM VENDEDOR V 
+LEFT JOIN VENDAS VE
+ON VE.ID_VENDEDOR = V.IDVENDEDOR
+WHERE ID_VENDEDOR IS NULL
+GO
+
+/* Exiba o total de carros cadastrados por marca. */
+
+SELECT M.NOME, COUNT(IDCARRO) AS 'QUANTIDADE'
+FROM MARCA M
+INNER JOIN MODELO MO
+ON M.IDMARCA = MO.ID_MARCA
+INNER JOIN CARRO C
+ON MO.IDMODELO = C.ID_MODELO
+GROUP BY(M.NOME)
+GO
+
+/* Mostre o valor total vendido por cada vendedor. */
+
+SELECT V.NOME, SUM(VE.VALOR) AS 'VALOR TOTAL VENDIDO'
+FROM VENDEDOR V
+INNER JOIN VENDAS VE
+ON V.IDVENDEDOR	= VE.ID_VENDEDOR
+GROUP BY V.NOME
+GO
+
+/* Exiba a quantidade de carros vendidos por forma de pagamento.*/
+
+SELECT FP.NOME,COUNT(C.IDCARRO) AS 'QUANTIDADE DE CARROS VENDIDOS'
+FROM FORMA_PAGAMENTO FP
+INNER JOIN VENDAS VE
+ON FP.IDPAGAMENTO = VE.ID_PAGAMENTO
+INNER JOIN CARRO C
+ON VE.ID_CARRO = C.IDCARRO
+GROUP BY FP.NOME
+GO
+
+/* Liste os clientes e o valor total gasto por cada um, ordenando do maior para o menor. */
+
+SELECT C.NOME, SUM(V.VALOR) AS 'VALOR TOTAL'
+FROM CLIENTE C
+INNER JOIN VENDAS V
+ON C.IDCLIENTE = V.ID_CLIENTE
+GROUP BY C.NOME
+ORDER BY [VALOR TOTAL] DESC
+GO
+
+/* Mostre o ticket médio de venda da concessionária. */
+
+SELECT AVG(VALOR) AS 'TICKET MÉDIO'
+FROM VENDAS
+GO
+
+/* Liste os carros que nunca foram vendidos. */
+
+SELECT M.NOME 
+FROM MODELO M
+INNER JOIN CARRO C
+ON M.IDMODELO = C.ID_MODELO
+LEFT JOIN VENDAS V
+ON C.IDCARRO = V.ID_CARRO
+WHERE V.ID_CARRO IS NULL
+GO
+
+
+/* Mostre o vendedor que realizou a maior venda individual. */
+
+SELECT TOP 1
+    V.NOME AS Vendedor,
+    VE.VALOR AS MaiorVenda
+FROM VENDAS VE
+INNER JOIN VENDEDOR V
+    ON VE.ID_VENDEDOR = V.IDVENDEDOR
+ORDER BY VE.VALOR DESC;
