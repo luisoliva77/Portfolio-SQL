@@ -8,7 +8,7 @@ O projeto envolve desde a modelagem e estruturação dos dados até a criação 
 consultas SQL para análise dos indicadores e desenvolvimento do dashboard no
 Power BI.
 
-![Dashboard de Vendas ](./Imagens/dashboard.png)
+![Dashboard de Vendas ](./Imagens/dashboard.JPG)
 
 
 ## Problema de Negócio
@@ -141,7 +141,7 @@ Melhorar a interpretação dos indicadores no Power BI;
 Permitir análises como faturamento por produto, categoria, fornecedor, vendedor e período;
 Facilitar a manutenção e expansão do banco de dados.
 
-[Imagem do StarSchema](./Imagens/StarSchema.png)
+[Imagem do StarSchema](./Imagens/StarSchema.JPG)
 
 
 
