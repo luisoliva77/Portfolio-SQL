@@ -141,8 +141,7 @@ Melhorar a interpretação dos indicadores no Power BI;
 Permitir análises como faturamento por produto, categoria, fornecedor, vendedor e período;
 Facilitar a manutenção e expansão do banco de dados.
 
-[Imagem do Projeto2](./Imagens/StarSchema.JPG)
-
+[Imagem do Projeto2](./Imagens/starschema.JPG)
 
 
 # Principais Insights
