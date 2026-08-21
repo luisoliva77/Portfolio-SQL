@@ -8,7 +8,8 @@ O projeto envolve desde a modelagem e estruturação dos dados até a criação 
 consultas SQL para análise dos indicadores e desenvolvimento do dashboard no
 Power BI.
 
-[Imagem do Projeto](https://github.com/luisoliva77/PowerBI-Portfolio/blob/main/dashboard-Hortifruti/Imagens/dashboard.png)
+![Dashboard de Vendas ](./Imagens/dashboard.png)
+
 
 ## Problema de Negócio
 
@@ -140,7 +141,7 @@ Melhorar a interpretação dos indicadores no Power BI;
 Permitir análises como faturamento por produto, categoria, fornecedor, vendedor e período;
 Facilitar a manutenção e expansão do banco de dados.
 
-[Imagem do Projeto]((https://github.com/luisoliva77/PowerBI-Portfolio/blob/main/dashboard-Hortifruti/Imagens/StarSchema.png))
+[Imagem do StarSchema](./Imagens/StarSchema.png)
 
 
 
