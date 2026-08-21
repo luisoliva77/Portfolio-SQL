@@ -89,7 +89,7 @@ O banco foi estruturado seguindo uma abordagem relacional, conectando informa√ß√
 
 ### Modelo de dados
 
-![Modelo do Banco de Dados](./Imagens/cardinalidade.png)
+![Modelo do Banco de Dados](./Imagens/Cardinalidades.png)
 
 ---
 
