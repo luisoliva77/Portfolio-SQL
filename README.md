@@ -199,3 +199,6 @@ A solução desenvolvida permite que a empresa utilize os dados para:
 O dashboard está disponível para visualização através do link abaixo:
 
 🔗 **[Acessar Dashboard de Analise Comercial](https://app.powerbi.com/view?r=eyJrIjoiZjI2MGJjMTgtYWZmNi00NGM0LWI0ZjMtNDQ4Y2UyOTk0Y2JjIiwidCI6IjFkYjg3Njk3LWJhNWUtNDcyMC1iNmQ1LTIxNzA3Y2Q5YTRjNyJ9&pageName=6ffa5ca964bb0a83d770)
+
+
+
