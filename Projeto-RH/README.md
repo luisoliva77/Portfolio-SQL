@@ -235,4 +235,4 @@ A solução permite ao RH responder perguntas como:
 
 O dashboard completo pode ser acessado através do link abaixo:
 
-![Dashboard RH](https://app.powerbi.com/view?r=eyJrIjoiNDIxOTc3NWItZmU3Yy00ZTBjLTgyMzgtYWNiZjIwM2U1ZDcwIiwidCI6IjFkYjg3Njk3LWJhNWUtNDcyMC1iNmQ1LTIxNzA3Y2Q5YTRjNyJ9)
+[Dashboard RH](https://app.powerbi.com/view?r=eyJrIjoiNDIxOTc3NWItZmU3Yy00ZTBjLTgyMzgtYWNiZjIwM2U1ZDcwIiwidCI6IjFkYjg3Njk3LWJhNWUtNDcyMC1iNmQ1LTIxNzA3Y2Q5YTRjNyJ9)
